@@ -1,2 +1,2 @@
 # Kosmik-backbone-js
-Kosmik webiste Backbone Js Version
+Kosmik website Backbone Js Version
