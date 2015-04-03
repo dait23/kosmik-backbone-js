@@ -1,0 +1,10 @@
+<% if (id) { %>
+<li><div class="bublex">3</div><i class="fa fa-comment" style="color: rgb(255, 255, 255); font-size: 20px; margin-left: 20px;"></i>
+</li>
+<li> 
+    <img src="https://graph.facebook.com/<%= id %>/picture?width=47&height=54" class="user-avatar"/>
+</li>
+<li style="font-size:10px;"><a href="#" class="logout">LOGOUT</a></li>
+<% } else { %>
+<li style="margin-top:-10px;font-size:10px;"><a href="#" class="login"><i class="fa fa-lock" style="margin-right:10px;"></i>LOGIN</a></li>
+<% } %>

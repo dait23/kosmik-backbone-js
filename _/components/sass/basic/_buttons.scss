@@ -1,0 +1,208 @@
+@import "../settings/settings";
+@import "../settings/media-queries";
+button,
+.btn,
+a.btn {
+	border: 0;
+	//border-radius: $btn-roundness;
+
+	background-color: transparent;
+
+	color: #fff;
+	cursor: pointer;
+	border:2px solid #ccc;
+	text-transform: uppercase;
+	line-height: 1;
+	font-family: inherit;
+	font-size: $btn-primary-font-size;
+	text-decoration: none;
+
+	display: inline-block;
+	padding: .75em 1.5em;
+
+	&:hover {
+		background-color: $main-color;
+		border:1px solid $main-color;
+        color: #fff;
+	}
+
+	&:active {
+		background-color: lighten($text-color, 10%);
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.btn-primary {
+	@extend .btn;
+
+	background-color: $btn-primary-bg;
+    color: $btn-primary-text-color;
+    font-family: $font-light;
+    text-transform: uppercase;
+    border:1px solid $main-color;
+}
+
+.btn-share {
+    @extend .btn;
+
+   background-color: #f48fb1;
+    color: $btn-primary-text-color;
+    //font-family: $font-light;
+    text-transform: uppercase;
+    border:1px solid #f48fb1;
+    float: right;
+}
+
+.btn-follow {
+   display: inline-block;
+    padding: .75em 1.5em;
+
+    background-color:transparent;
+    color: #fff !important;
+    font-weight: 600;
+    //font-family: $font-light;
+    text-transform: uppercase;
+    border:2px solid #fff;
+    margin-top: -3px;
+    i{
+        margin-right: 14px;
+    }
+
+  &:hover{
+     border:2px solid #fff;
+     color: #fff;
+  }
+}
+
+.btn-follow-color {
+    @extend .btn;
+
+    background-color: $main-color;
+    color: $btn-primary-text-color;
+    font-family: $font-light;
+    text-transform: uppercase;
+    border:1px solid $main-color;
+    i{
+        margin-right: 14px;
+    }
+}
+
+.btn-like {
+    @extend .btn;
+
+    background-color: $btn-primary-bg;
+    color: $btn-primary-text-color;
+    font-family: $font-light;
+    text-transform: uppercase;
+    border:1px solid $btn-primary-bg;
+    i{
+        margin-right: 14px;
+    }
+}
+
+a.btn-eps{
+    @extend .btn;
+
+    //background-color: #009688;
+    color: $text-color;
+    font-family: $font-light;
+    text-transform: uppercase;
+    border-color:$text-color;
+    margin-top: 10px;
+
+}
+
+a.btn-more {
+    @extend .btn;
+
+    background-color: transparent;
+    color: $main-color;
+    font-family: $font-light;
+    text-transform: uppercase;
+    border:1px solid $main-color;
+    text-align: center;
+    margin: 0 auto;
+    i{
+        margin-right: 14px;
+    }
+}
+
+.btn-login {
+	@extend .btn;
+
+	background-color: $btn-primary-bg;
+    color: $btn-primary-text-color;
+    //font-family: $font-light;
+    text-transform: uppercase;
+    border:1px solid $main-color;
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    border-radius:0;
+}
+a.btn-fb {
+	@extend .btn;
+
+	background-color: #325292;
+    color: $btn-primary-text-color;
+    //font-family: $font-light;
+    text-transform: uppercase;
+    border:1px solid #325292;
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 15px;
+
+    &:hover{
+     background-color: #325292; border:1px solid #325292;
+
+    }
+    i{
+    	margin-right: 10px;font-size: 14px;
+    }
+}
+
+
+.btn-shop {
+	@extend .btn;
+	background-color: transparent;
+    color: $text-color;
+    font-family: $font-light;
+    text-transform: uppercase;
+    border:1px solid $text-color;
+    text-align: center;
+    margin-left: 41px;
+}
+.subcribe{
+	position: absolute;
+margin-top: -49px;
+margin-left: 166px;
+height: 37px;
+border-radius: 0px;
+padding-top: 7px;
+
+    @include screen(768px, 1024px)  { 
+
+    	//position: static;
+    	margin-top: -10px;
+    	margin-left: 63px;
+    	border-radius:0;
+
+    	}
+}
+.btn-small {
+	@extend .btn;
+
+	font-size: $btn-small-font-size;
+}
+
+.btn-large {
+	@extend .btn;
+
+	font-size: $btn-large-font-size;
+	font-weight: bold;
+}

@@ -1,0 +1,138 @@
+@import "../settings/settings";
+@import "../settings/media-queries";
+
+
+.side-logo{
+	width:100%;
+	height:58px;
+	background-color: $main-color;//#880E4F;
+	-webkit-box-shadow: 0 1px 5px rgba(0,0,0,.17);
+       -moz-box-shadow: 0 1px 5px rgba(0,0,0,.17);
+            box-shadow: 0 1px 5px rgba(0,0,0,.17);
+
+	float: left;
+}
+
+ul.side{
+
+	width:100%;
+	height:auto;
+	list-style: none;
+	float: left;
+	padding-top: 30px;
+	//padding-top: 0px;
+	background-color: #0f141a;
+
+	li{
+        width: 100%;
+		text-align: center;
+		font-size: 10px;
+		color: #fff;
+		font-family: $font-light;
+		height: 80px;
+		text-transform: uppercase;
+		margin-top: 0px;
+		margin-bottom: 30px;
+
+		a{
+			color: #fff;
+			text-decoration: none;
+			font-size: 8px !important;
+
+			&:hover{
+
+				color:$main-color;
+			}
+		}
+		i{
+
+			font-size: 30px;
+			text-align: center;
+			float: left;
+			width: 100%;
+			margin-bottom: 10px;
+		}
+		
+	}
+}
+.side-upload{
+	color:yellow !important;
+}
+a.side-upload{
+	color:yellow !important;
+}
+
+ .buble{
+		 	position: absolute;
+			width: 20px;
+			height: 20px;
+			border-radius: 100%;
+			background-color: #ff0066;
+			color: #FFF;
+			font-size: 12px;
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+			left: 0;
+			right: 0;
+			margin-top: -5px;
+			line-height: 17px;
+}
+
+
+
+@media (min-width: 1200px) { /* Slidebar widths on extra large screens. */
+  .sb-slidebar {
+    width: 8%;
+  }
+  
+  .sb-width-thin {
+    width: 85px;
+  }
+  
+  .sb-width-wide {
+    width: 7%;
+  }
+}
+
+ul.social{
+
+	width:100%;
+	height:auto;
+	list-style: none;
+	float: left;
+	padding-top: 30px;
+	//padding-top: 0px;
+
+	li{
+        width: 100%;
+		text-align: center;
+		font-size: 10px;
+		color: #fff;
+		font-family: $font-light;
+		height: 40px;
+		text-transform: uppercase;
+		margin-top: 0px;
+		margin-bottom: 10px;
+
+		a{
+			color: #fff;
+			text-decoration: none;
+			font-size: 8px !important;
+
+			&:hover{
+
+				color:$main-color;
+			}
+		}
+		i{
+
+			font-size: 30px;
+			text-align: center;
+			float: left;
+			width: 100%;
+			margin-bottom: 10px;
+		}
+		
+	}
+}

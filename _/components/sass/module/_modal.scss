@@ -1,0 +1,92 @@
+@import "../settings/settings";
+@import "../settings/media-queries";
+.box-modal{
+  padding: 0px;
+	h1 {margin-left:20px;margin-top: 20px;
+		font-size: 24px;color:$link-color;text-transform: uppercase;font-family: $font-light;line-height: 10px;font-weight: 300;
+		span{color:$main-color;}
+	}
+	}
+
+.modal-but{
+	width:190px;height:60px;float:right;background-color: $main-color;border:0px;margin-top: -0px;border-radius:0px;
+	text-align:center;text-transform: uppercase;font-size: 24px;font-family: $font-light;font-weight: 300;color:#fff;
+}
+
+
+
+.inputs{
+
+	margin-top: 20px;
+    text-align: center;
+    height: 30px;
+    font-family: $font-light;
+    font-weight: 300;
+    color:lighten($text-color, 30%);
+}
+#one{margin-left: -12px;}
+#onex{margin-left: -12px;}
+
+////////modal popup tracking
+
+.pop-tracking{
+	text-align: center;
+	font-style: normal;
+	font-size: 18px;
+	color:$text-color;
+	text-transform: uppercase;
+	font-family: $font-light;
+	padding-top: 30px;
+	margin-bottom: 25px;
+}
+
+.box-login{
+	width:300px;
+	background-color: #FFF;
+	height:450px;
+
+   a.fgt{
+   	color: $text-color;
+   	font-size: 14px;
+   	text-transform: capitalize;
+   	font-family: $font-light;
+   	border-bottom:1px solid #ccc;
+   	padding-bottom: 10px;
+   	height: 20px;
+   }
+	.title{
+		text-align: center;
+		font-style: normal;
+		font-size: 30px;
+		color: $main-color;
+		text-transform: uppercase;
+		font-family: $font-light;
+		margin-bottom: 30px;
+	}
+
+	.box-regis{
+
+		width: 100%;
+		height: 30px;
+		background-color: #880e4f;
+		text-align: center;
+		color: #fff;
+		font-size: 12px;
+		text-transform: uppercase;
+		position: absolute;
+        bottom: 0px;
+        padding-top:5px;
+        font-family: $font-light;
+
+        a{
+        	color: #fff;
+        	text-decoration: none;
+        }
+         @include screen(768px, 1024px)  { 
+
+         	margin-left: -3px;
+
+         }
+
+	}
+}

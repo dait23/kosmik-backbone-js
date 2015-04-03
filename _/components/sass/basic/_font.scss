@@ -1,0 +1,42 @@
+@import "../settings/settings";
+
+@font-face {
+    font-family: 'UniversLTStd55Roman';
+    src: url('fonts/universltstd.eot');
+    src: url('fonts/universltstd.eot') format('embedded-opentype'),
+         url('fonts/universltstd.woff2') format('woff2'),
+         url('fonts/universltstd.woff') format('woff'),
+         url('fonts/universltstd.ttf') format('truetype'),
+         url('fonts/universltstd.svg#UniversLTStd55Roman') format('svg');
+}
+
+
+@font-face {
+	font-family:'UniversLTStd-Black';
+	src: url('fonts/UniversLTStd-Black_latin+latin-ext_gdi.eot');
+	src: url('fonts/UniversLTStd-Black_latin+latin-ext_gdi.eot?#iefix') format('embedded-opentype'),
+		url('fonts/UniversLTStd-Black_latin+latin-ext_gdi.woff') format('woff'),
+		url('fonts/UniversLTStd-Black_latin+latin-ext_gdi.ttf') format('truetype'),
+		url('fonts/UniversLTStd-Black_latin+latin-ext_gdi.otf') format('opentype'),
+		url('fonts/UniversLTStd-Black_latin+latin-ext_gdi.svg#UniversLTStd-Black') format('svg');
+	font-weight: 850;
+}
+
+
+@font-face {
+	font-family:'UniversLTStd-Light';
+	src: url('fonts/UniversLTStd-Light_latin+latin-ext_gdi.eot');
+	src: url('fonts/UniversLTStd-Light_latin+latin-ext_gdi.eot?#iefix') format('embedded-opentype'),
+		url('fonts/UniversLTStd-Light_latin+latin-ext_gdi.woff') format('woff'),
+		url('fonts/UniversLTStd-Light_latin+latin-ext_gdi.ttf') format('truetype'),
+		url('fonts/UniversLTStd-Light_latin+latin-ext_gdi.otf') format('opentype'),
+		url('fonts/UniversLTStd-Light_latin+latin-ext_gdi.svg#UniversLTStd-Light') format('svg');
+	font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Chiller-Regular';
+  src: url('fonts/Chiller-Regular.eot?#iefix') format('embedded-opentype'),  url('fonts/Chiller-Regular.woff') format('woff'), url('fonts/Chiller-Regular.ttf')  format('truetype'), url('fonts/Chiller-Regular.svg#Chiller-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

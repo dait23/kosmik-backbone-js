@@ -1,0 +1,28 @@
+@import "../settings/settings";
+
+
+
+.breadcrumb {
+  padding: $breadcrumb-padding-vertical $breadcrumb-padding-horizontal;
+  ///margin-bottom: $line-height-computed;
+  list-style: none;
+  background-color: $breadcrumb-bg;
+  //border-radius: $border-radius-base;
+
+  > li {
+    display: inline-block;
+    text-transform: uppercase; font-size: 10px;
+    font-family: $font-light;
+    + li:before {
+     content: "#{$breadcrumb-separator}\00a0"; // Unicode space added since inline-block means non-collapsing white-space
+      padding: 0 5px;
+      color: $text-color;
+    }
+  }
+  > li a{color:$text-color;}
+  //> li:first-child{font-size:18px;}
+  //> li:nth-child(2) {font-size:16px;}
+  > .active {
+    color: $breadcrumb-active-color;
+  }
+}

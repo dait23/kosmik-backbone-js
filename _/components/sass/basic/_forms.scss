@@ -1,0 +1,147 @@
+@import "../settings/settings";
+@import "../settings/media-queries";
+
+
+form {
+	.field-group {
+		margin-bottom: 1em;
+
+		i{
+			font-size: 20px;
+			color: #777;
+		}
+
+		label {
+			display: block;
+			margin-bottom: .5em;
+			font-weight: normal;
+			font-size: 12px;
+		}
+
+		input:not([class^="btn"]),
+		textarea {
+			width: 100%;
+			background-color: #fff;
+			border: 1px solid $field-border-color;
+            //border-radius: $form-roundness;
+			padding: .75em;
+
+			&:focus,
+			&:hover {
+				border-color: darken($field-border-color, 15%);
+				outline: none;
+			}
+
+			&.field-fw {
+				width: 100%;
+			}
+			 @include screen(768px, 1024px)  { 
+
+               border-radius:0;
+               box-shadow:none;
+			 }
+
+		}
+
+		.help {
+			@extend small;
+
+			margin: .5em 0 0;
+
+			color: $muted-text-color;
+			font-style: italic;
+		}
+
+		&.field-error {
+			label,
+			.help,
+			input {
+				color: $field-error-color;
+				border-color: lighten($field-error-color, 40%);
+			}
+		}
+		input.share[type="text"] {
+              height: 60px;
+              width: 100%;
+              padding-left: 0.75em;
+              //border-top:0px;
+              //border-left:0px;
+              //border-right:0px;
+              text-align: left;
+              border-color:#ccc;
+              font-size: 18px;
+			    color: #cccccc;
+			    font-family: $font-light;
+              
+         }
+	}
+
+	.required {
+		color: $field-required-color;
+	}
+
+	fieldset {
+		border-color: $field-border-color;
+
+		padding: 1.5em;
+		margin-bottom: $baseline;
+
+		legend {
+			font-weight: bold;
+
+			padding: 0 .5em;
+		}
+	}
+
+	input[type="checkbox"],
+	input[type="radio"] {
+		display: none;
+	}
+
+	input[type="checkbox"] + label:before {
+		background-color: #fff;
+		border: 1px solid $field-border-color;
+
+		content: "";
+		display: inline-block;
+		height: 1.25em;
+		margin: -2px 6px 0 0;
+		vertical-align: middle;
+		width: 1.25em;
+
+		font-size: 12px;
+		line-height: 1.25em;
+		text-align: center;
+		color: $text-color;
+	}
+
+	input[type="checkbox"]:checked + label:before {
+		content: "\2713";
+		color: $main-color;
+	}
+
+	input[type="radio"] + label:before {
+		background-color: #fff;
+
+		border: 1px solid $field-border-color;
+		border-radius: 0em;
+
+		content: "";
+		display: inline-block;
+		margin: -2px 6px 0 0;
+		width: 15px;
+		height: 15px;
+		vertical-align: middle;
+
+		font-size: 12px;
+		line-height: .6em;
+		text-align: center;
+		color: $text-color;
+	}
+
+	input[type="radio"]:checked + label:before {
+		content: "";
+		font-size: 20px;
+		background-color: $main-color;
+	}
+}

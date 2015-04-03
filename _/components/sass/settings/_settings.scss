@@ -1,0 +1,109 @@
+// Grid Variables.
+$column-count: 12;
+$gutter:20px;
+$width:1132px;
+
+// Font Variables.
+
+$font-normal:"UniversLTStd55Roman", "Open Sans", "Myriad Pro", sans-serif;
+$font-light:"UniversLTStd-Light", "Open Sans", "Myriad Pro", sans-serif;
+$font-bold:"UniversLTStd-Black", "Open Sans", "Myriad Pro", sans-serif;
+$font-slider:"Chiller-Regular", "Open Sans", "Myriad Pro", sans-serif;
+$opensans:'Open Sans', "UniversLTStd55Roman", sans-serif;
+
+$roboto:'Roboto Condensed', sans-serif;
+
+// Typography Variables.
+$main-color:#ff0066;
+$text-color: #666;
+$link-color: #333;
+$active-color:$main-color;
+$hr-color: #ccc;
+$muted-text-color: lighten($text-color, 30%);
+
+$baseline: 1.5em;
+
+$body-font-family: $opensans;
+
+$font-size:12px;
+
+$h1-size: 1.875em;
+$h2-size: 1.563em;
+$h3-size: 1.250em;
+$h4-size: 15px;
+$h5-size: 12px;
+$h6-size: 10px;
+
+
+
+// Button Variables.
+$btn-roundness: 4px;
+$form-roundness: 3px;
+
+$btn-small-font-size: .75em;
+$btn-large-font-size: 1.5em;
+
+$btn-default-bg: #fff;
+$btn-default-text-color: #777;
+
+$btn-primary-bg: $main-color;
+//$btn-primary-text-color: lighten(#0f82bd, 50%);
+$btn-primary-text-color: #fff;
+$btn-primary-font-size:12px;
+
+
+
+// Form Variables.
+$field-border-color: #cdcbcc;
+$field-error-color: red;
+$field-required-color: red;
+
+
+
+// Icon Variables.
+$icon-roundness: 3px;
+$icon-border-color: $main-color;
+
+
+
+// Feedback Variables.
+$information-color: #439ccf;
+$error-color: #e72915;
+$warning-color: #d35400;
+$success-color: #74a730;
+
+
+
+// Navigation Variables.
+$navbar-link-color: $text-color;
+$navbar-submenu-bg: #dde2e4;
+
+
+
+// Tabs Variables.
+$tabs-border-color: #ccc;
+$tabs-inactive-bg-color: #c1cacd;
+$tabs-active-bg-color: #fff;
+
+
+
+// Accordion Variables.
+$accordion-border-color: #ccc;
+$accordion-inactive-bg-color: #c1cacd;
+$accordion-active-bg-color: #333;
+$accordion-active-text-color: #fff;
+
+
+$breadcrumb-padding-vertical:   8px !default;
+$breadcrumb-padding-horizontal: 15px !default;
+//** Breadcrumb background color
+$breadcrumb-bg:                 #ffff !default;
+//** Breadcrumb text color
+$breadcrumb-color:              #999 !default;
+//** Text color of current page in the breadcrumb
+$breadcrumb-active-color:       $main-color;
+//** Textual separator for between breadcrumb elements
+$breadcrumb-separator:          "/" !default;
+
+
+
